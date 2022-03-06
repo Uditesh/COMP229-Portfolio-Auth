@@ -1,0 +1,39 @@
+<!-- Filename: views/addcontact.ejs
+Author: Uditesh Jha
+Creation date: 05/03/2022 -->
+
+<%- include('../Partials/header.ejs'); %>
+    <div class="wrapper-container">
+        <%- include('../Partials/navbar.ejs'); %>
+
+            <div class="row">
+                <div class="offset-md-2 col-md-8">                   
+                    <h1>Add A Contact<br>                
+
+                    <form class="form" method="POST">
+                        <div class="form-group">
+                            <label for="nameTextField" >Name:</label>
+                            <input type="text" class="form-control " id="nameTextField" placeholder="Enter name"
+                                name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nameTextField" >Number:</label>
+                            <input type="text" class="form-control " id="numberTextField" placeholder="Enter number"
+                                name="number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nameTextField" >Email:</label>
+                            <input type="text" class="form-control " id="emailTextField" placeholder="Enter email"
+                                name="email" required>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit"><i class="fas fa-edit"></i>Submit</button>
+                        <a href="/contactlist" class="btn btn-secondary">Cancel</a>
+
+                    </form>
+                </div>
+            </div>
+    </div>
+    <%- include('../Partials/footer.ejs'); %>

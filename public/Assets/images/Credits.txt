@@ -1,0 +1,6 @@
+Images Resources.
+
+Images of facebook, github, instagram, linkedin, menu button are taken from below website.
+https://www.flaticon.com/
+
+Images of bootstrap website, todo list website, profile image and logo are mine or build by me.

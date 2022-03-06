@@ -1,0 +1,30 @@
+<link rel='stylesheet' href="/Content/app.css" />
+<!-- header section -->
+<header class="header">
+    <!-- logo -->
+    <div class="logo">
+        <img src="Assets/images/UditeshJhaLogo.jpg" alt="website logo">
+    </div>
+    <!-- menu icon -->
+    <img id="menu" src="Assets/images/menu-button.png" alt="menu icon">
+    <!-- navigation bar -->
+    <nav class="navigation-bar">
+        <ul>
+            <li class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="/aboutme">About Me</a></li>
+            <li class="nav-link"><a href="/projects">Projects</a></li>
+            <li class="nav-link"><a href="/services">Services</a></li>
+            <li class="nav-link"><a href="/contactme">Contact</a></li>
+            <li class="nav-link"><a href="/businesscontact">Business Contacts</a></li>
+            <% if(typeof displayName=='string' && displayName) { %>
+                <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Welcome <%= displayName %>
+                </li>
+                <li class="nav-item"><a href="/logout" class="nav-link">
+                    <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+            <% } else { %>
+                <li class="nav-item"><a href="/login" class="nav-link">
+                    <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+            <% } %>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,29 @@
+{
+  "name": "portfoliowebsite-uditeshjha",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^16.4.0",
+    "npm": "^7.19.0"
+
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "connect-flash": "^0.1.1",
+    "express-session": "^1.17.2",
+    "jquery": "^3.6.0",
+    "mongoose": "^6.0.12",
+    "passport-jwt": "^4.0.0",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0"
+  }
+}

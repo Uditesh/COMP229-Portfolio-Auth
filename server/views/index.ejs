@@ -1,0 +1,19 @@
+<!--
+fileName : index.ejs,
+Student  : Uditesh Jha,
+Student ID : 301224991,
+Date : 05/03/2022,
+--> 
+<% if (title=="Home" ) { %>
+  <%- include('./home') %>
+    <% } else if (title=="About Me" ) { %>
+      <%- include('./aboutme') %>
+        <% } else if (title=="My Services" ) { %>
+          <%- include('./services') %>
+            <% } else if (title=="Projects" ) { %>
+              <%- include('./projects') %>
+                <% } else if (title=="Contact Me" ) { %>
+                  <%- include('./contactme') %>
+                      <% } else if (title=="Business Contacts" ) { %>
+                        <%- include('./businessContact/list') %>
+                          <% } %>

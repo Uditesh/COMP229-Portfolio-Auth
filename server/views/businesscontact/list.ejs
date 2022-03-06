@@ -1,0 +1,35 @@
+<%- include('../Partials/header.ejs'); %>
+<div class="wrapper-container">
+    <%- include('../Partials/navbar.ejs'); %>
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1>Business Contact</h1><br>
+            <table class="table table-bordered table-striped table-hover"> 
+                <tr>
+                    <th>Contact Name</th>
+                    <th>Contact Number</th>
+                    <th>Email</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <% for (let count=0; count < ContactList.length; count++) { %>
+                    <tr>
+                        <td class="text-center"><%= ContactList[count].name %></td>
+                        <td class="text-center">
+                            <%= ContactList[count].number %>
+                        </td>
+                        <td class="text-center">
+                            <%= ContactList[count].email %>
+                        </td>
+                        <td class="text-center">
+                            <a href="/businesscontact/edit<%= ContactList[count]._id %> " class="btn btn-info btn-sm" role="button">Edit</a>
+                        </td>
+                        <td class="text-center">
+                            <a href="/businesscontact/delete<%= ContactList[count]._id %> " class="btn btn-danger btn-sm" role="button">Delete</a>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<%- include('../Partials/footer.ejs'); %>

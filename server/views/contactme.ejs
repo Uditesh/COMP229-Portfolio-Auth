@@ -1,0 +1,32 @@
+<%- include('Partials/header.ejs'); %>
+<div class="wrapper-container">
+    <%- include('Partials/navbar.ejs'); %>
+
+    <!-- contact section -->
+    <section id="contact-me" class="contact-section">
+        <p style="margin-top: 80px; margin-bottom: 50px;">Let's make some value products with your
+            amazing ideas and my creativeness! Feel free to contact me for any type of inquiry.
+            I usually reply within 24 hours.</p>
+        <div class="contact-form-div">
+            <h2>Contact Me</h2>
+            <!-- contact form -->
+            <form class="contact-me-form" action="/" method="get">
+                <div class="row">
+                    <label for="name">Name : </label>
+                    <input type="text" id="name">
+                </div>
+                <div class="row">
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" value="">
+                </div>
+                <div class="row">
+                    <label for="message">Message : </label>
+                    <textarea id="message" rows="8" cols="118"></textarea>
+                </div>
+                <!-- submit button -->
+                <button class="submit-btn" type="submit" name="button">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+</div>
+<%- include('Partials/footer.ejs'); %>
